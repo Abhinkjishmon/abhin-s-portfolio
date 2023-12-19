@@ -3,13 +3,13 @@
 R
 
 .nav__logo-name
-Rian Lot.
+Abhin K Jishmon.
 
 .nav__title
 Menu
 
 .nav__name
-Rian
+Abhin
 
 .nav__link
 Home - About Me - Projects - Contact Me

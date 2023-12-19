@@ -95,10 +95,6 @@ img {
 /*========== Variables Dark theme ==========*/
 
 
-/*========== 
-	Color changes in some parts of 
-	the website, in dark theme
-==========*/
 
 
 /*=============== REUSABLE CSS CLASSES ===============*/
@@ -169,7 +165,50 @@ img {
 }
 
 /*=============== HEADER & NAV ===============*/
+.header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--body-color);
+  z-index: var(--z-fixed);
+  transition: box-shadow .4s;
+}
 
+.nav{
+  position: relative;
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo{
+  display: flex;
+  column-gap: .5rem;
+  align-items: center;
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+}
+
+.nav__logo-circle,
+.nav__toggle{
+  width: 32px;
+  height: 32px;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  display: grid;
+  place-items: center;
+}
+
+.nav__logo-circle{
+  border-radius: 50%;
+}
+
+.nav__toggle{
+  font-size: 1.25rem;
+  cursor: pointer;
+}
 
 /* Navigation for mobile devices */
 
