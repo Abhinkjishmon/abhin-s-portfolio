@@ -29,3 +29,14 @@ const shadowHeader = () =>{
                        : header.classList.remove('shadow-header')
 }
 window.addEventListener('scroll', shadowHeader)
+
+//email
+const contactForm = document.getElementById('contact-form'),
+    contactMessage = document.getElementById('contact-message')
+
+const sendEmail = (e)=>{
+    e.preventDefault()
+
+    emailjs.sendForm('service_700sghl','template_nc91n0a','#contact-form','h9bpPWT1eir9vUFAF')
+}
+contactForm.addEventListener('submit', sendEmail)
