@@ -865,7 +865,14 @@ img {
 .contact__social-link:hover{
   background-color: var(--first-color);
 }
-/*=============== FOOTER ===============*/
+.contact__message{
+  color: var(--white-color);
+  font-size: var(--small-font-size);
+  position: absolute;
+  bottom: -1.6rem;
+  left: 0;
+}
+/*--------------- FOOTER -------------------*/
 
 
 /*=============== SCROLL BAR ===============*/

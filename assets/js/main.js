@@ -38,5 +38,16 @@ const sendEmail = (e)=>{
     e.preventDefault()
 
     emailjs.sendForm('service_700sghl','template_nc91n0a','#contact-form','h9bpPWT1eir9vUFAF')
+    .then(() =>{
+        contactMessage.textContent = 'Message sent successfully ✅'
+
+        setTimeout(() =>{
+            contactMessage.textContent = ''
+        }, 5000)
+
+        contactForm.reset()
+    }, () =>{
+        contactMessage.textContent = 'Message not sent (service error) ❌'
+    })
 }
 contactForm.addEventListener('submit', sendEmail)
