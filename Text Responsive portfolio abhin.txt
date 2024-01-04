@@ -173,4 +173,4 @@ Home - About - Projects
 
 .footer__copy
 &#169; All Rights Reserved By 
-<a href="#">Bedimcode.</a>
+<a href="#">Abhin K Jishmon.</a>
